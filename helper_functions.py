@@ -72,7 +72,7 @@ def global_alignment(seq1, seq2, scoring_function):
             aligned2 = seq2[j - 1] + aligned2
             j -= 1
 
-    return aligned1, aligned2, float(H[n][m])
+    return aligned1, aligned2, float(matrix[n][m])
 
 
 def local_alignment(seq1, seq2, scoring_function):
